@@ -1,4 +1,4 @@
-package school;
+package com.school;
 
 public class Principal extends Staff {
     public Principal(String name, String role) {

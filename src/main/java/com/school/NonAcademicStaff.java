@@ -1,4 +1,4 @@
-package school;
+package com.school;
 
 public class NonAcademicStaff extends Staff {
     public NonAcademicStaff(String name, String role) {

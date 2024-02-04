@@ -1,4 +1,4 @@
-package school;
+package com.school;
 
 public class Staff {
     String name;
