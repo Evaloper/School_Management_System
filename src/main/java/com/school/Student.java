@@ -1,6 +1,6 @@
 package com.school;
 
-public class Student {
+public class Student implements TakeCourse {
     private String name;
     private boolean stubborn;
     private boolean malPractise;
@@ -35,9 +35,9 @@ public class Student {
         this.malPractise = malPractise;
     }
 
-    public void takeCourse(Course course){
+
+    @Override
+    public void takeCourseStu(Course course) {
         System.out.println(getName() + " is taking the course: " +  course.getCourseName());
     }
-
-
 }

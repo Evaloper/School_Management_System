@@ -13,6 +13,7 @@ public class Teacher extends Staff implements Teach {
 
     @Override
     public void teachCourse(Teacher name, Course courseName) {
-        Teach.super.teachCourse(name, courseName);
+//        Teach.super.teachCourse(name, courseName);
+        System.out.println(name.getName() + " teaches " + courseName.getCourseName());
     }
 }
