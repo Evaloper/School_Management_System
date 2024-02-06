@@ -1,9 +1,10 @@
 package com.school;
 
 public class Teacher extends Staff implements Teach {
-    public Teacher(String name) {
-        super(name);
+    public Teacher(String name, int age) {
+        super(name, age);
     }
+
 
     public void squadTaken(Teacher teacherName, Class squadName){
 //        squad(teacherName, squadName);
@@ -11,8 +12,7 @@ public class Teacher extends Staff implements Teach {
     }
 
     @Override
-    public void teachCourse() {
-//        Teach.super.teachCourse();
-        System.out.println(getName() + " teaches Java");
+    public void teachCourse(Teacher name, Course courseName) {
+        Teach.super.teachCourse(name, courseName);
     }
 }

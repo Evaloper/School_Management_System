@@ -3,12 +3,12 @@ package com.school;
 public class Student {
     private String name;
     private boolean stubborn;
-    private boolean malpractise;
+    private boolean malPractise;
 
-    public Student(String name, boolean stubborn, boolean malpractise) {
+    public Student(String name, boolean stubborn, boolean malPractise) {
         this.name = name;
         this.stubborn = stubborn;
-        this.malpractise = malpractise;
+        this.malPractise = malPractise;
     }
 
     public String getName() {
@@ -27,12 +27,12 @@ public class Student {
         this.stubborn = stubborn;
     }
 
-    public boolean isMalpractise() {
-        return malpractise;
+    public boolean isMalPractise() {
+        return malPractise;
     }
 
-    public void setMalpractise(boolean malpractise) {
-        this.malpractise = malpractise;
+    public void setMalPractise(boolean malPractise) {
+        this.malPractise = malPractise;
     }
 
     public void takeCourse(Course course){

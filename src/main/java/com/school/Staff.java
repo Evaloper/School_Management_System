@@ -1,18 +1,9 @@
 package com.school;
 
-public class Staff {
-    String name;
-
-    public String getName() {
-        return name;
+public class Staff extends Person {
+    public Staff(String name, int age) {
+        super(name, age);
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Staff(String name) {
-        this.name = name;
-    }
 }
 

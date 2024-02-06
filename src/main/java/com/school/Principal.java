@@ -1,8 +1,8 @@
 package com.school;
 
 public class Principal extends Staff {
-    public Principal(String name) {
-        super(name);
+    public Principal(String name, int age) {
+        super(name, age);
     }
 
     public void admits(Applicant applicantName){
@@ -14,7 +14,7 @@ public class Principal extends Staff {
     }
 
     public void expel(Student studentName) {
-        if (studentName.isStubborn() || studentName.isMalpractise() && studentName.isStubborn() || studentName.isMalpractise()) {
+        if (studentName.isStubborn() || studentName.isMalPractise() && studentName.isStubborn() || studentName.isMalPractise()) {
             System.out.println(studentName.getName() + " was found guilty and was expelled by " + getName() + " for breaking the school golden rules");
         } else {
             System.out.println(studentName.getName() + " was not found guilty by " + getName());
