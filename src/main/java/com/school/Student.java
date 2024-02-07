@@ -1,22 +1,14 @@
 package com.school;
 
-public class Student implements TakeCourse {
-    private String name;
+public class Student extends Person implements TakeCourse {
+
     private boolean stubborn;
     private boolean malPractise;
 
-    public Student(String name, boolean stubborn, boolean malPractise) {
-        this.name = name;
+    public Student(String name, int age, boolean stubborn, boolean malPractise) {
+        super(name, age);
         this.stubborn = stubborn;
         this.malPractise = malPractise;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public boolean isStubborn() {
@@ -34,7 +26,6 @@ public class Student implements TakeCourse {
     public void setMalPractise(boolean malPractise) {
         this.malPractise = malPractise;
     }
-
 
     @Override
     public void takeCourseStu(Course course) {
