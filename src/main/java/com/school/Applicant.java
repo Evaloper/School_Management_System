@@ -2,7 +2,7 @@ package com.school;
 
 public class Applicant extends Person{
 
-    int score;
+    private int score;
 
     public int getScore() {
         return score;

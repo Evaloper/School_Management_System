@@ -1,6 +1,6 @@
 package com.school;
 
-public class Person {
+abstract public class Person {
     private String name;
     private int age;
 
